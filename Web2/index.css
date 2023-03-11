@@ -128,7 +128,7 @@ nav a:hover {
 }
 
 .top {
-  background: url(Hike.jpg) no-repeat center center fixed;
+  background: url(./top.jpeg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
@@ -247,10 +247,10 @@ input:hover {
 }
 
 .mid2 {
-  background: url(./K.png) no-repeat center center fixed;
+  background: url(./mid.jpeg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
-  color: white;
+  color: rgb(14,176,168);
 }
 
 .mid2 p{
@@ -260,10 +260,10 @@ input:hover {
 .end {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
-  background: url(./end.jpg) no-repeat center center;
-  height: 500px;
+  background: url(./end.jpeg) no-repeat center center;
+  height: 1000px;
   background-size: cover;
   overflow: hidden;
   color: white;

@@ -2,16 +2,22 @@ body{
   background-color: black;
 }
 
-.container{
+.main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.d1 img,.d2 img,.d3 img,.d4 img{
-  height: 500px;
-  width: 500px;
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.d1 img,.d2 img,.d3 img,.d4 img,.d5 img,.d6 img,.d7 img,.d8 img,.d9 img{
+  height: 300px;
+  width: 300px;
   margin: 5px;
   padding: 5px;
 }
