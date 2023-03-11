@@ -1,0 +1,39 @@
+body{
+  background-color: black;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.d1 img,.d2 img,.d3 img,.d4 img{
+  height: 500px;
+  width: 500px;
+  margin: 5px;
+  padding: 5px;
+}
+
+h1{
+  color: white;
+}
+
+.home{
+  margin-top: 5px;
+  border-radius: 25px;
+  height: 30px;
+  width: 110px;
+}
+
+.home:hover{
+  background-color: rgb(14, 176, 168,1);
+  color: white;
+  border-radius: 25px;
+}
+
+a{
+  text-decoration: none ; 
+  color:black;
+}

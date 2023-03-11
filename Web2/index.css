@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #333;
+  color: #222;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0%;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #0EB0A8;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav+nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+nav ul li+li {
+  transform: translateX(-150%);
+}
+
+nav ul li+li+li {
+  transform: translateX(-200%);
+}
+
+nav ul li+li+li+li {
+  transform: translateX(-250%);
+}
+
+nav ul li+li+li+li+li {
+  transform: translateX(-300%);
+}
+
+nav a {
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: #0EB0A8;
+  font-weight: bold;
+}
+
+.top {
+  background: url(Hike.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#logo {
+  height: 40px;
+  width: 40px;
+  margin-left: 50%;
+  border-radius: 25px;
+}
+
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.input {
+  width: 80%;
+  height: 25px;
+  line-height: 28px;
+  padding: 2 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #0d0c22;
+  transition: .3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgb(14, 176, 168);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(14 176 168 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.rate {
+  width: 300px;
+  height: 150px;
+  border-radius: 2px;
+  background-color: rgba(14, 176, 168, 0.7);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+  padding-left: 5px;
+  margin-top: 290px;
+  margin-left: 75px;
+}
+
+.p1 {
+  text-align: center;
+}
+
+
+.temp {
+  height: 250px;
+  width: 500px;
+  filter: invert(100%);
+}
+
+.p3 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 100px;
+  margin: 0px;
+  padding: 2px;
+}
+
+.p4 {
+  justify-self: center;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 0px;
+  padding: 0px;
+}
+
+.p3,
+.p4,
+.p5 {
+  color: white;
+}
+
+.adv {
+  width: 600px;
+  height: 650px;
+}
+
+.mid2 {
+  background: url(./K.png) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+}
+
+.mid2 p{
+  padding :50px 50px 50px 50px;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./end.jpg) no-repeat center center;
+  height: 500px;
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+
+}
+
+.extra {
+  display: flex;
+  flex-direction: row;
+}
+
+.e1,
+.e2,
+.e3 {
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 2px;
+  background-color: rgba(14, 176, 168, 0.5);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  margin: 15px;
+}
+
+h1 {
+  text-shadow: 4px 4px rgba(0, 0, 0, 1);
+}
+
+h2 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+.learn {
+  border-radius: 25px;
+  width: 110px;
+  height: 30px;
+}
